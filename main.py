@@ -27,14 +27,15 @@ print('##### START #####')
 
 #use bigData, d and save Data
 
-#dataBIG = readData.readExcelIndepth('data/Hybrid_Data_input_new.xlsx',28)
-#d = Analysis1.indepthAnalysis(dataBIG, 'data/results/Stratege1.xlsx')
+dataBIG = readData.readExcelIndepth('data/Hybrid_Data_input_new.xlsx',28)
+d = Analysis1.indepthAnalysis(dataBIG, 'data/results/Stratege1.xlsx')
+saveData.saveToExcelInDepth('data/results/Strategy1.xlsx',d)
 
 dataBIGH2 = readData.readExcelIndepth('data/Hybrid_Data_input_HYDRO.xlsx',28)
 h2 = AnalysisH2.indepthAnalysis(dataBIGH2, 'data/results/Results_Hydro.xlsx')
-#saveData.saveToExcelInDepth('data/results/Results_Hydro.xlsx',h2)
+saveData.saveToExcelInDepth('data/results/Results_Hydro.xlsx',h2)
 
-#saveData.saveToExcelInDepth('data/results/Strategy1.xlsx',d)
+
 
 
 
