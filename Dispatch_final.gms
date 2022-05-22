@@ -122,7 +122,7 @@ $offtext
 
 TES_cap(t).. sum(i,TES_charge(i,t)) - TES_dis(t) + TES_SOC_0$(ord(t) = 1) + TES_SOC(t-1)$(ord(t) > 1) =l= TES_capacity ;
 
-SOC(t).. TES_SOC(t) =e= TES_charge('I',t)*0.99*0.42 + TES_charge('II',t) - TES_dis(t) + TES_SOC(t-1)$(ord(t) > 1) + TES_SOC_0$(ord(t) = 1);
+SOC(t).. TES_SOC(t) =e= TES_charge('I',t)*0.98*0.42 + TES_charge('II',t) - TES_dis(t) + TES_SOC(t-1)$(ord(t) > 1) + TES_SOC_0$(ord(t) = 1);
 
 powerplant_limit(i,t).. grid(i,t)  =l= Cap(i);
 
